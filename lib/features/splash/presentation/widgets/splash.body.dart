@@ -1,5 +1,6 @@
 // ignore_for_file: prefer_const_constructors
 import 'dart:async';
+import 'package:e_comm/core/utils/size_config.dart';
 import 'package:e_comm/features/onBoarding/presentation/on_boarding_view.dart';
 import 'package:flutter/material.dart';
 
@@ -18,6 +19,7 @@ class SplashBody extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     goToNextScreen(context);
+    SizeConfig().init(context);
     return Container(
       child: Center(
         child: Text(
